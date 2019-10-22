@@ -14,4 +14,13 @@ h1 {
 .clicked {
     color:#7f8c8d;
 }
+
+.form,
+.greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
 /* how to access to an id in css: #title {} */ 
