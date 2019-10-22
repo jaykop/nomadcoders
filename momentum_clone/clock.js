@@ -15,7 +15,7 @@ function sayHi(){
 
 function init(){
     // getTime();
-    setInterval(getTime, 1000)
+    setInterval(getTime, 0)
 }
 
 init();
