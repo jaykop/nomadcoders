@@ -4,32 +4,58 @@ const todoForm = document.querySelector(".js-todoForm"),
 
 const TODOS_LS = 'todos';
 
-const todos = [];
+let todos = [];
 
+function deletaTodo(event){
+    // console.log(event.target.parentNode);
+
+    // get the item id to delete
+    const button = event.target;
+    const li_to_delete = button.parentNode;
+    todoList.removeChild(li_to_delete);
+
+    // assign new list
+    const cleanTodos = todos.filter(function(todo) {
+        // generate a new list
+        return todo.id !== parseInt(li_to_delete.id);
+    });
+    todos = cleanTodos;
+    saveTodos();
+}
+
+// save current todo list to the loca storage
 function saveTodos(){
     localStorage.setItem(TODOS_LS, JSON.stringify(todos));
 }
 
+// generate a new item
 function paintTodo(text){
     const li = document.createElement("li");
     const delButton = document.createElement("button");
     const span = document.createElement("span");
     const newId = todos.length + 1;
     delButton.innerHTML = "❌";
+    delButton.addEventListener("click", deletaTodo);
     span.innerText = text;
     li.appendChild(delButton);
     li.appendChild(span);
     li.id = newId;
+
+    // generate html code
     todoList.appendChild(li);
     const todoObj = {
         text: text,
         id: newId
     }
+
+    // add to the list
     todos.push(todoObj);
     saveTodos();
 }
 
+// 
 function handleSubmit(event){
+    // prevent it refresh when it submit(hit enter key)
     event.preventDefault();
     const currentValue = todoInput.value;
     paintTodo(currentValue);
