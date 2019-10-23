@@ -24,6 +24,8 @@ function deletaTodo(event){
 }
 
 // save current todo list to the loca storage
+const todos = [];
+
 function saveTodos(){
     localStorage.setItem(TODOS_LS, JSON.stringify(todos));
 }
@@ -36,6 +38,7 @@ function paintTodo(text){
     const newId = todos.length + 1;
     delButton.innerHTML = "❌";
     delButton.addEventListener("click", deletaTodo);
+
     span.innerText = text;
     li.appendChild(delButton);
     li.appendChild(span);
@@ -53,9 +56,8 @@ function paintTodo(text){
     saveTodos();
 }
 
-// 
-function handleSubmit(event){
-    // prevent it refresh when it submit(hit enter key)
+leSubmit(event){
+
     event.preventDefault();
     const currentValue = todoInput.value;
     paintTodo(currentValue);
