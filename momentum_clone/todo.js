@@ -4,9 +4,10 @@ const todoForm = document.querySelector(".js-todoForm"),
 
 const TODOS_LS = 'todos';
 
+// save current todo list to the loca storage
 let todos = [];
 
-function deletaTodo(event){
+function deletaTodo(event) {
     // console.log(event.target.parentNode);
 
     // get the item id to delete
@@ -15,7 +16,7 @@ function deletaTodo(event){
     todoList.removeChild(li_to_delete);
 
     // assign new list
-    const cleanTodos = todos.filter(function(todo) {
+    const cleanTodos = todos.filter(function (todo) {
         // generate a new list
         return todo.id !== parseInt(li_to_delete.id);
     });
@@ -23,15 +24,12 @@ function deletaTodo(event){
     saveTodos();
 }
 
-// save current todo list to the loca storage
-const todos = [];
-
-function saveTodos(){
+function saveTodos() {
     localStorage.setItem(TODOS_LS, JSON.stringify(todos));
 }
 
 // generate a new item
-function paintTodo(text){
+function paintTodo(text) {
     const li = document.createElement("li");
     const delButton = document.createElement("button");
     const span = document.createElement("span");
@@ -56,7 +54,7 @@ function paintTodo(text){
     saveTodos();
 }
 
-leSubmit(event){
+function handleSubmit(event){
 
     event.preventDefault();
     const currentValue = todoInput.value;
@@ -64,17 +62,17 @@ leSubmit(event){
     todoInput.value = "";
 }
 
-function loadTodos(){
+function loadTodos() {
     const loadedTodos = localStorage.getItem(TODOS_LS);
     if (loadedTodos !== null) {
         const parsedTodos = JSON.parse(loadedTodos);
-        parsedTodos.forEach(function(todo){
+        parsedTodos.forEach(function (todo) {
             paintTodo(todo.text);
         });
-    }    
+    }
 }
 
-function init(){
+function init() {
     loadTodos();
     todoForm.addEventListener("submit", handleSubmit);
 }
