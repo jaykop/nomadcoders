@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/jaykop/nomadcoders/tree/master/react/movie_app/static/css/main.04fb09bf.chunk.css",
-    "main.js": "/jaykop/nomadcoders/tree/master/react/movie_app/static/js/main.531a5535.chunk.js",
-    "main.js.map": "/jaykop/nomadcoders/tree/master/react/movie_app/static/js/main.531a5535.chunk.js.map",
-    "runtime-main.js": "/jaykop/nomadcoders/tree/master/react/movie_app/static/js/runtime-main.fcf66449.js",
-    "runtime-main.js.map": "/jaykop/nomadcoders/tree/master/react/movie_app/static/js/runtime-main.fcf66449.js.map",
-    "static/js/2.076e7f06.chunk.js": "/jaykop/nomadcoders/tree/master/react/movie_app/static/js/2.076e7f06.chunk.js",
-    "static/js/2.076e7f06.chunk.js.map": "/jaykop/nomadcoders/tree/master/react/movie_app/static/js/2.076e7f06.chunk.js.map",
-    "index.html": "/jaykop/nomadcoders/tree/master/react/movie_app/index.html",
-    "precache-manifest.b650dade6a1a97d20ae13e6a9aa472c3.js": "/jaykop/nomadcoders/tree/master/react/movie_app/precache-manifest.b650dade6a1a97d20ae13e6a9aa472c3.js",
-    "service-worker.js": "/jaykop/nomadcoders/tree/master/react/movie_app/service-worker.js",
-    "static/css/main.04fb09bf.chunk.css.map": "/jaykop/nomadcoders/tree/master/react/movie_app/static/css/main.04fb09bf.chunk.css.map"
+    "main.css": "/nomadcoders/react/movie_app/static/css/main.04fb09bf.chunk.css",
+    "main.js": "/nomadcoders/react/movie_app/static/js/main.531a5535.chunk.js",
+    "main.js.map": "/nomadcoders/react/movie_app/static/js/main.531a5535.chunk.js.map",
+    "runtime-main.js": "/nomadcoders/react/movie_app/static/js/runtime-main.248cc2fe.js",
+    "runtime-main.js.map": "/nomadcoders/react/movie_app/static/js/runtime-main.248cc2fe.js.map",
+    "static/js/2.076e7f06.chunk.js": "/nomadcoders/react/movie_app/static/js/2.076e7f06.chunk.js",
+    "static/js/2.076e7f06.chunk.js.map": "/nomadcoders/react/movie_app/static/js/2.076e7f06.chunk.js.map",
+    "index.html": "/nomadcoders/react/movie_app/index.html",
+    "precache-manifest.6231aca2649ad38bc8e9fce9df1f7137.js": "/nomadcoders/react/movie_app/precache-manifest.6231aca2649ad38bc8e9fce9df1f7137.js",
+    "service-worker.js": "/nomadcoders/react/movie_app/service-worker.js",
+    "static/css/main.04fb09bf.chunk.css.map": "/nomadcoders/react/movie_app/static/css/main.04fb09bf.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.fcf66449.js",
+    "static/js/runtime-main.248cc2fe.js",
     "static/js/2.076e7f06.chunk.js",
     "static/css/main.04fb09bf.chunk.css",
     "static/js/main.531a5535.chunk.js"
