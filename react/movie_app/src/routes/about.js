@@ -1,8 +1,16 @@
 import React from 'react';
 
-function About () {
-
-    return <span>About this page: I built it because I love moives/</span>;
+function About (props) {
+    // console.log(props);
+    
+    return (
+        <div>
+            <span>
+                We go Norwich!
+            </span>
+            <span>-- Steven Gerrard, 2014</span>
+        </div>
+    );
 }
 
 export default About;
